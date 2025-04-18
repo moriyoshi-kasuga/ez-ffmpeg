@@ -52,6 +52,7 @@ opengl = ["dep:surfman", "dep:glow", "dep:bytemuck"]
 rtmp = ["dep:rml_rtmp", "dep:slab", "dep:dashmap", "flv"]
 flv = ["dep:bytes", "dep:byteorder"]
 static = ["ffmpeg-next/static"]
+build = ["ffmpeg-next/build"]
 docs-rs = ["async", "opengl", "rtmp", "flv"]
 
 [package.metadata.docs.rs]

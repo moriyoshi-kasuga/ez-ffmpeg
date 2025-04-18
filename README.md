@@ -100,7 +100,17 @@ More examples can be found [here][examples].
 - **rtmp:** Includes an embedded RTMP server for local streaming scenarios.
 - **flv:** Provides support for FLV container parsing and handling.
 - **async:** Adds asynchronous functionality (allowing you to `.await` operations).
-- **static:** Enables static linking for FFmpeg libraries (via `ffmpeg-next/static`).
+
+### Port Features
+
+Enables support for features provided by the `ffmpeg-next-sys` crate.
+
+> [!CAUTION]
+> If you encounter build errors related to these features, **please do not create an issue in this repository**.  
+> Instead, report them to the `ffmpeg-next-sys` repository: [https://github.com/zmwangx/rust-ffmpeg-sys](https://github.com/zmwangx/rust-ffmpeg-sys)
+
+- **static**: Enables static linking of FFmpeg libraries (via `ffmpeg-next-sys/static`).
+- **build**: Builds FFmpeg from source and links it statically (via `ffmpeg-next-sys/build`).
 
 ## License
 
